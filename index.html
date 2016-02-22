@@ -1,0 +1,224 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>FIP Creative</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		
+		<style>
+			body{
+				font-family: 'Open Sans', sans-serif;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.layer{ 
+			  	  position: fixed; 
+			  	  width: 100%;
+  			}
+			
+			.layer img{
+				  /* Set rules to fill background */
+				  min-height: 120%;
+				  min-width: 1024px;
+					
+				  /* Set up proportionate scaling */
+				  width: 120%;
+				  height: auto;
+					
+				  /* Set up positioning */
+				  position: fixed;
+				  top: -10%;
+				  left: -10%;
+			}
+			
+			
+			
+			.outer {
+			    display: table;
+			    position: absolute;
+			    height: 100%;
+			    width: 100%;
+			}
+			
+			.middle {
+			    display: table-cell;
+			    vertical-align: middle;
+			}
+			
+			.inner {
+			    margin-left: auto;
+			    margin-right: auto; 
+			    width: 80%;
+			 
+			}
+
+			.logo{
+				width: 39%;
+				float: left;
+				border-right: solid 1px #fff;
+			}
+			
+			.logo img{
+				width: 80%;
+				margin: auto;
+			}
+			
+			.content{
+				width: 50%;
+				float: left;
+				padding: 0 0 0 10%;
+			}
+			
+			em{
+				font-style: normal;
+				text-transform: uppercase;
+				font-weight: 600;
+				font-size: 16px;
+			}
+			
+			h1, h2{
+				margin: 0 0 0 0;
+				letter-spacing: -1px;
+			}
+			
+			h1{
+				font-weight: bolder;
+				color: #0079c2;
+			}
+			
+			h2{
+				font-weight: 100;
+			}
+			
+			a{
+				text-decoration: none;
+				color: #0079c2;
+			}
+			
+			span{
+				color: #0079c2;
+			}
+			
+			.services{
+				font-size: 14px;
+			}
+			
+		
+			
+			
+			@media screen and (max-width: 1024px) { /* Specific to this particular image */
+			  .layer img{
+			    left: 50%;
+			    margin-left: -512px;   /* 50% */
+			    
+			     /* Set rules to fill background */
+				  min-height: 300%;
+				  min-width: 1024px;
+					
+				  /* Set up proportionate scaling */
+				  width: 300%;
+				  height: auto;
+					
+				  /* Set up positioning */
+				  position: fixed;
+				  top: -10%;
+				  left: -10%;
+			  }
+			}
+			
+			@media screen and (max-width: 800px) {
+			  
+			  .logo{
+				  width: 100%;
+				  padding: 0;
+				  margin: 0;
+				  border: none;
+				  float: none;
+			  }
+			  
+			  .logo img{
+			  	display: block;
+				  padding: 0;
+				  float: none;
+				  margin: 10% auto 10% auto;
+				  width: 60%;
+			  }
+			  
+			  .content{
+				  width: 80%;
+				  float: none;
+			  }
+			}
+			
+		</style>
+
+	</head>
+	<body>
+	
+		<div id="scene" class="scene">
+			<div class="layer" data-depth="0.20">
+				<img src="dot-bkg.png" alt="background" />
+			</div>
+		</div>
+	
+	<div class="outer">
+		
+		<div class="middle">
+		
+		
+		<div class="inner">
+			<div class="logo">
+				<img src="fipcreativelogo.png" alt="FIP Creative Logo" />
+				<div class="clear"></div>
+			</div>
+			<div class="content">
+				<h1>UNDER CONSTRUCTION</h1>
+				<H2>COMING SOON!</H2>
+				<P>We're a lot of things ... and our new website will better demonstrate our capabilities.</P>
+
+				<P class="services">
+					<em>Design</em> - Graphic, Web, & Print<br />
+					<em>Branding & Message Development</em> - Services & Products<br >
+					<em>Media</em> - Production & Placement<br />
+					<em>Promotional Products</em> - Logo'd Apparel, Trade Show Giveaways & all other promo items<br>
+					<em>Spiritwear</em> - Customized gear to support your team or organization
+				</P>
+				<p>In the meantime, if you'd like to get know us, please contact us directly.</p>
+				<p>
+					<strong>ADDRESS:</strong>  <a href="https://www.google.com/maps/place/FiP+Creative/@40.216971,-76.128355,17z/data=!3m1!4b1!4m2!3m1!1s0x89c61375d8f3a673:0x37d5561a0a250afd">460 Stevens Rd. Stevens PA 17578</a><br />
+					<strong>PHONE:</strong> <a href="tel:717-335-3500">717-335-3500</a><br />
+					<strong>EMAIL:</strong>  <a href="mailto:info@FIPCreative.com">info@FiPcreative.com</a><br />
+				</P>
+				<div class="clear"></div>
+			</div>
+		</div>
+			
+			
+			
+		</div>
+		
+		
+		</div>
+		
+		
+		<script src="parallax.js"></script>
+	<script>
+
+	// Pretty simple huh?
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-25168185-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>​
+	</body>
+</html>
